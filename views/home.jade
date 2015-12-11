@@ -29,24 +29,18 @@ html
               a(href='#MyInfo') My Info
             form.navbar-form.navbar-right
               .form-group
-                input.form-control(type='text', placeholder='Email')
-              .form-group
-                input.form-control(type='password', placeholder='Password')
-              button.btn.btn-success(type='submit') Sign in
+             a(href='/signout', class='text-center new-account') Sign Out
             li.divider(role='separator')
         // /.nav-collapse
     div(ng-controller='MainController')
     #user
-              
               br
               br
               h1.text-center.login-title Welcome #{user.firstName}. Check your details below:
               div.signup-wall
               ul.user-details
-              li Email    ==> #{user.email}
               li First Name ==> #{user.firstName} 
               li Last Name ==> #{user.lastName}
-              a(href='/signout', class='text-center new-account') Sign Out
               img(src='http://www.gettyimages.com/landing/assets/static_content/home/109393787_birds.jpg')
               #chart_div
       chart_div(style='width: 900px; height: 500px;')

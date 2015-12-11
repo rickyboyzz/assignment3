@@ -18,7 +18,7 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#') Assignment#1
+          a.navbar-brand(href='#') Assignment#3
         navbar.navbar-collapse.collapse
           ul.nav.navbar-nav
             li.active
@@ -36,8 +36,22 @@ html
             li.divider(role='separator')
         // /.nav-collapse
     div(ng-controller='MainController')
+    #user
+              
+              br
+              br
+              h1.text-center.login-title Welcome #{user.firstName}. Check your details below:
+              div.signup-wall
+              ul.user-details
+              li Email    ==> #{user.email}
+              li First Name ==> #{user.firstName} 
+              li Last Name ==> #{user.lastName}
+              a(href='/signout', class='text-center new-account') Sign Out
+              img(src='http://www.gettyimages.com/landing/assets/static_content/home/109393787_birds.jpg')
+              #chart_div
       chart_div(style='width: 900px; height: 500px;')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='../../dist/js/bootstrap.min.js')
     script(src='../../assets/js/docs.min.js')
     script(src='../../assets/js/ie10-viewport-bug-workaround.js')
+      

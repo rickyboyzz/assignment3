@@ -12,13 +12,13 @@ block content
 							br
 							input(type='password', name='password' class='form-control', placeholder='Password', required)
 							button(class='btn btn-lg btn-primary btn-block', type='submit') Sign in
+							a(href='/login/facebook', class='btn btn-block btn-social btn-facebook') Login with Facebook
+								i(class='fa fa-facebook')
+							a(href='/login/linkedin', class='btn btn-block btn-social btn-linkedin') Login with LinkedIn
+								i(class='fa fa-linkedin')
 							span.clearfix
 					br		
 					a(href='/signup', class='text-center new-account') Create an account
-					br
-					br
-					a(href='/Facebook', class='text-center new-account') Sign up with Facebook
-					br
 					#message
 					if message
 						h1.text-center.error-message #{message}

@@ -9,7 +9,6 @@ module.exports = function(passport) {
         clientSecret    : fbConfig.appSecret,
         callbackURL     : fbConfig.callbackUrl,
         // MLL - Added profileFields parameter
-        // http://stackoverflow.com/questions/19073128/facebook-oauth2-does-not-provide-user-email
         profileFields	: ['emails', 'first_name', 'last_name']
     },
 

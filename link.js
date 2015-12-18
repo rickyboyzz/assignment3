@@ -1,5 +1,5 @@
 module.exports = {
-	'appID' : 'LINKEDIN_API_KEY',
-	'appSecret' : 'LINKEDIN_SECRET_KEY',
-	'callbackUrl' : 'http://127.0.0.1:3000/auth/linkedin/callback'
+  'appID' : 'LINKEDIN_API_KEY',
+  'appSecret' : 'LINKEDIN_SECRET_KEY',
+  'callbackUrl' : 'https://assignment3-rickyboyzz.c9users.io/login/linkedin/callback'
 }
